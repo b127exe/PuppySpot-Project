@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | PuppySpot</title>
+    <script src="AOS Master/dist/aos.js"></script>
+    <link rel="stylesheet" href="AOS Master/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="JQuary/jquary.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- custom cursors  -->
+    <div class="cursor-1"></div>
+    <div class="cursor-2"></div>
+
+    <!-- Navigation Bar Section -->
+
+    <div class="header" id="GetHeader">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="Index.html"><img src="Pictures/Web logo.png"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a class="Anchor" href="Index.html">Home</a></li>
+                        <li><a class="Anchor" href="category.html">Puppy Categories</a>
+                        <li><a class="Anchor" href="care.html">Health & Care</a>
+                        <li><a class="Anchor" href="About.html">About Us</a></li>
+                        <li><a class="Anchor" href="Contact.html">Contact Us</a></li>
+                        <li><a class="Anchor" href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="Pictures/menu.png" id="3DotIcon" class="menu-icon" onclick="menuToggle()">
+            </div>
+
+            <div class="row">
+                <div class="col-2 col-2-1">
+                    <h1 class="forh1">A FRIEND OF US</h1>
+                    <p class="forpara">Through the ages,People have claimed Dogs as one of their closet, and best
+                        companions.All of the domesticated animales,Dogs served the wildest array of roles; protector ,
+                        helper , lifesaver, & companion</p>
+                    <a href="category.html" class="btn forbtn">Explore Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- featured Categories Section -->
+
+    <div class="categories" id="GetCategory">
+        <div class="small-container">
+            <h2 class="title-1">Puppy Categories</h2>
+            <div class="row">
+                <div class="col-3 Overlay__Box" data-aos="" data-aos-duration="1500">
+                    <img class="Puppy__overlay" src="Puppy/single-1.png">
+                    <div class="image__overlay">
+                        <div class="image__title"><a href="products.html">Goldendoodle</a></div>
+                        <span class="image__description">Find a Puppy</span>
+                    </div>
+                </div>
+                <div class="col-3 Overlay__Box" data-aos="" data-aos-duration="1500">
+                    <img class="Puppy__overlay" src="Puppy/single-2.png">
+                    <div class="image__overlay">
+                        <div class="image__title"><a href="Products_2.html">German</a></div>
+                        <span class="image__description">Find a Puppy</span>
+                    </div>
+                </div>
+                <div class="col-3 Overlay__Box" data-aos="" data-aos-duration="1500">
+                    <img class="Puppy__overlay" src="Puppy/single-3.png">
+                    <div class="image__overlay">
+                        <div class="image__title"><a href="product_3.html">Pembroke</a></div>
+                        <span class="image__description">Find a Puppy</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- featured products Section -->
+
+    <div class="small-container" id="GetFeature">
+        <h2 class="title-1">Featured Puppies</h2>
+
+        <div class="row" id="FeatureProductpannel">
+
+        </div>
+    </div>
+    <!-- Latest Section -->
+
+    <div class="small-container" id="GetLatest">
+        <h2 class="Latestitle">Latest Puppies</h2>
+        <div class="row" id="latestProductPanel">
+
+        </div>
+    </div>
+
+    <!-- Health & care Offer -->
+
+    <div class="offer" id="GetCare">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="Pictures/1.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Read Our Health & Care Promises</p>
+                    <h1>Puppy Health</h1>
+                    <small>Dogs make for the best friends, and it’s only right that we celebrate them for all the joy
+                        and love they’ve given us. Whether labeled on a dog bandana or a paw print poster, you’ll need
+                        the perfect dog quote to accompany your piece. That might be with a custom photo book about your
+                        dog, a social media post for National Dog Day, or with a personalized pet gift picked out just
+                        for your furry friend.</small>
+                    <br><a href="care.html" class="btn">Check Out &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Testimonial Section -->
+
+    <div class="testimonial" id="GetTest">
+        <div class="small-container">
+            <h2 class="title-3">Reviews</h2>
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Kamal ka Banda hai ye Ammar!,
+                        cupiditate quod.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="Pictures/user-2.png">
+                    <h3>Saad</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero atque obcaecati beatae expedita,
+                        cupiditate quod.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="Pictures/user-1.png">
+                    <h3>Zunaira</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero atque obcaecati beatae expedita,
+                        cupiditate quod.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="Pictures/user-3.png">
+                    <h3>Tashfa</h3>
+                </div>
+                <a href="Reviews.html"><i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Advertiser Brands -->
+
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="Pictures/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="Pictures/logo-samsung.png">
+                </div>
+                <div class="col-5">
+                    <img src="Pictures/logo-philips.png">
+                </div>
+                <div class="col-5">
+                    <img src="Pictures/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="Pictures/logo-upwork.png" style="margin-bottom: 13px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div class="progress">
+    <ul>
+        <span class="progress-line"></span>
+        <li><a href="#GetHeader">1</a></li>
+        <li><a href="#GetCategory">2</a></li>
+        <li><a href="#GetFeature">3</a></li>
+        <li><a href="#GetCare">4</a></li>
+        <li><a href="#GetTest">5</a></li>
+    </ul>
+   </div>
+
+
+    <!-- Footer Section -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <a href="Index.html"><img src="Pictures/Logo white.png"></a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis minima inventore assumenda
+                        facere animi.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return policy</li>
+                        <li>Join Afiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copright &copy; 2022 - This Website is made by Bilal & Ammar</p>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="home.js"></script>
+
+</body>
+
+</html>

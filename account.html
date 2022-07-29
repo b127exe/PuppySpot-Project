@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - PuppySpot</title>
+    <script src="AOS Master/dist/aos.js"></script>
+    <link rel="stylesheet" href="AOS Master/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="JQuary/jquary.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <!-- custom cursors  -->
+   <div class="cursor-1"></div>
+   <div class="cursor-2"></div>
+   
+     <!-- Navigation Bar Section -->
+
+     <div class="header">
+        <div class="container">    
+            <div class="navbar">
+                <div class="logo">
+                    <a href="Index.html"><img src="Pictures/Web logo.png"></a>
+                </div>
+            
+            <nav>
+                <ul id="MenuItems">
+                    <li><a class="Anchor" href="Index.html">Home</a></li>
+                    <li><a class="Anchor" href="category.html">Puppy Categories</a>
+                    <li><a class="Anchor" href="care.html">Health & Care</a>
+                    <li><a class="Anchor" href="About.html">About Us</a></li>
+                    <li><a class="Anchor" href="Contact.html">Contact Us</a></li>
+                    <li><a class="Anchor" href="account.html">Account</a></li>
+                </ul>
+            </nav> 
+            <img src="Pictures/menu.png" id="3DotIcon" class="menu-icon" onclick="menuToggle()">
+        </div>
+
+        <div class="row forRow">
+            <div class="col-2 col-2-1">
+                <h1 class="forh1">Login / Register</h1>
+                <p class="forpara">Through the ages,People have claimed Dogs as one of their closet, and best companions.All of the domesticated animales,Dogs served the wildest array of roles; protector , helper , lifesaver, & companion</p>
+                <a href="" class="btn forbtn">Explore Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <!-- Account Section -->
+
+       <div class="account-pg">
+        <div class="row">
+            <h2 class="title-3 tile-3">Login / Register</h2>
+        </div>
+           <div class="container">
+               <div class="row account-box">
+                <div class="col-2">
+                    <img src="Puppy/banner-1.png" width="90%" class="accImg">
+                </div>
+                   <div class="col-2">
+                    <div class="form-container">
+                         <div class="form-btn">
+                            <a><span onclick="Login()">Login</span></a> 
+                             <a><span onclick="Reg()">Register</span></a>
+                             <hr id="indicator">
+                         </div>
+
+                         <form id="loginForm">
+                             <input type="text" placeholder="Username">
+                             <input type="password" placeholder="Password">
+                             <button type="submit" class="btn">Login</button>
+                             <a href="">Forgot Password?</a>
+                         </form>
+                         <form id="regForm">
+                             <input type="text" placeholder="Username">
+                             <input type="email" placeholder="E-mail">
+                             <input type="password" placeholder="Password">
+                             <a href=""><button type="submit" class="btn">Register</button></a>
+                         </form>
+                    </div>
+                   </div>
+             
+               </div>
+           </div>
+       </div>
+
+   <!-- Footer Section -->
+   
+   <div class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="footer-col-2">
+                <a href="Index.html"><img src="Pictures/Logo white.png"></a>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis minima inventore assumenda facere animi.</p>
+               </div>
+               <div class="footer-col-3">
+                <h3>Useful links</h3>
+               <ul>
+                   <li>Coupons</li>
+                   <li>Blog post</li>
+                   <li>Return policy</li>
+                   <li>Join Afiliate</li>
+               </ul>
+            </div>
+               <div class="footer-col-4">
+                <h3>Follow Us</h3>
+               <ul>
+                   <li>Facebook</li>
+                   <li>twitter</li>
+                   <li>Instagram</li>
+                   <li>Youtube</li>
+               </ul>
+            </div>
+           </div>
+           <hr>
+             <p class="copyright">Copright 2022 - This Website is made by Bilal & Ammar</p>
+       </div>
+   </div>
+
+
+  <script>
+      var MenuItems = document.getElementById('MenuItems');
+var MenuIcon =  document.getElementById('3DotIcon');
+
+MenuItems.style.maxHeight = "0px";
+MenuIcon.style.transform = "rotateZ(0deg)";
+
+function menuToggle(){
+    if( MenuItems.style.maxHeight == "0px" , MenuIcon.style.transform == "rotateZ(0deg)")
+    {
+      MenuIcon.style.transform = "rotateZ(90deg)";
+      MenuItems.style.maxHeight = "270px"
+    }
+    else{
+      MenuItems.style.maxHeight = "0px";
+      MenuIcon.style.transform = "rotateZ(0deg)";
+    }
+    
+};
+    //   Event for Active Form okay!!!!!
+
+    let loginForm = document.getElementById("loginForm")
+
+    let regForm = document.getElementById("regForm")
+
+    let indicator = document.getElementById("indicator")
+ 
+       function Reg(){
+           regForm.style.transform = "translateX(0px)"
+           loginForm.style.transform = "translateX(0px)"
+           loginForm.style.transform = "translateX(0px)"
+           indicator.style.transform = "translateX(100px)"
+       }
+       function Login(){
+           regForm.style.transform = "translateX(300px)"
+           loginForm.style.transform = "translateX(300px)"
+           indicator.style.transform = "translateX(0px)"
+       }
+
+       let cursor1 = document.querySelector('.cursor-1');
+let cursor2 = document.querySelector('.cursor-2');
+
+window.onmousemove = (e) =>{
+    cursor1.style.top = e.pageY + 'px';
+    cursor1.style.left = e.pageX + 'px';
+    cursor2.style.top = e.pageY + 'px';
+    cursor2.style.left = e.pageX + 'px';
+}
+
+document.querySelectorAll('a').forEach(links =>{
+
+    links.onmouseenter = () =>{
+        cursor1.classList.add('active');
+        cursor2.classList.add('active');
+    }
+
+    links.onmouseleave = () =>{
+        cursor1.classList.remove('active');
+        cursor2.classList.remove('active');
+    }
+
+});
+  </script>
+
+  <script>
+      AOS.init();
+  </script>
+
+</body>
+</html>

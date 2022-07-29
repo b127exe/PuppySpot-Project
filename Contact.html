@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PuppySpot</title>
+    <script src="AOS Master/dist/aos.js"></script>
+    <link rel="stylesheet" href="AOS Master/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="JQuary/jquary.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- custom cursors  -->
+    <div class="cursor-1"></div>
+    <div class="cursor-2"></div>
+
+    <!-- Navigation Bar Section -->
+
+    <div class="header-2">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="Pictures/Web logo.png"></a>
+                </div>
+
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a class="Anchor anc-3" href="Index.html">Home</a></li>
+                        <li><a class="Anchor anc-3" href="category.html">Puppy Categories</a>
+                        <li><a class="Anchor anc-3" href="care.html">Health & Care</a>
+                        <li><a class="Anchor anc-3" href="About.html">About Us</a></li>
+                        <li><a class="Anchor anc-3" href="Contact.html">Contact Us</a></li>
+                        <li><a class="Anchor anc-3" href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+
+                <img src="Pictures/menu.png" id="3DotIcon" class="menu-icon" onclick="menuToggle()">
+            </div>
+
+            <div class="row forRow">
+                <div class="col-2 col-2-1">
+                    <h1 class="forh1">Contact Us</h1>
+                    <p class="forpara">Through the ages,People have claimed Dogs as one of their closet, and best
+                        companions.All of the domesticated animales,Dogs served the wildest array of roles; protector ,
+                        helper , lifesaver, & companion</p>
+                    <a href="" class="btn forbtn">Explore Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2 class="title-2">Contact Us</h2>
+        </div>
+    </div>
+
+
+    <div class="container formbox">
+
+        <div class="row">
+            <div class="col-2">
+                <div id="overlay">
+                    <form onsubmit="event.preventDefault()" class="contactform">
+                        <h2>Contact Us</h2>
+                        <label for="Name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter Your Name">
+                        <small class="error"></small>
+
+                        <label for="Email">Email:</label>
+                        <input type="text" id="email" placeholder="Enter Your Email">
+                        <small class="error"></small>
+
+                        <label for="Message">Message:</label>
+                        <textarea id="Message" placeholder="Type Your Message" rows="6"></textarea>
+                        <small class="error"></small>
+
+                        <div class="Center">
+                            <input onclick="validateform()" type="Submit" value="Send Message">
+                            <p id="success"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer section -->
+
+    <div class="footer">
+        <div class="container ">
+            <div class="row">
+                <div class="footer-col-2">
+                    <a href="index.html"><img src="Pictures/Logo white.png"></a>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis minima inventore assumenda
+                        facere animi.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return policy</li>
+                        <li>Join Afiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copright 2022 - This Website is made by Bilal & Ammar</p>
+        </div>
+    </div>
+
+    <script>
+
+        //  getdata
+        let nameInput = document.querySelector('#name');
+        let email = document.querySelector('#email');
+        let message = document.querySelector('#Message');
+        let success = document.querySelector('#success')
+        let errornodes = document.querySelectorAll('.error');
+        // validate data
+
+        clearMessage();
+
+        function validateform() {
+            if (nameInput.value.length < 1) {
+                errornodes[0].innertext = "Name can not ba blank";
+                nameInput.classList.add('error-border')
+            }
+        }
+        // clear error success message
+        function clearMessage() {
+            for (let i = 0; i < errornodes.length; i++) {
+                errornodes[i].innertext = "";
+            }
+            nameInput.classlist.remove("error-border");
+        }
+
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        var MenuItems = document.getElementById('MenuItems');
+        var MenuIcon = document.getElementById('3DotIcon');
+
+        MenuItems.style.maxHeight = "0px";
+        MenuIcon.style.transform = "rotateZ(0deg)";
+
+        function menuToggle() {
+            if (MenuItems.style.maxHeight == "0px", MenuIcon.style.transform == "rotateZ(0deg)") {
+                MenuIcon.style.transform = "rotateZ(90deg)";
+                MenuItems.style.maxHeight = "270px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+                MenuIcon.style.transform = "rotateZ(0deg)";
+            }
+
+        };
+        let cursor1 = document.querySelector('.cursor-1');
+        let cursor2 = document.querySelector('.cursor-2');
+
+        window.onmousemove = (e) => {
+            cursor1.style.top = e.pageY + 'px';
+            cursor1.style.left = e.pageX + 'px';
+            cursor2.style.top = e.pageY + 'px';
+            cursor2.style.left = e.pageX + 'px';
+        }
+
+        document.querySelectorAll('a').forEach(links => {
+
+            links.onmouseenter = () => {
+                cursor1.classList.add('active');
+                cursor2.classList.add('active');
+            }
+
+            links.onmouseleave = () => {
+                cursor1.classList.remove('active');
+                cursor2.classList.remove('active');
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
